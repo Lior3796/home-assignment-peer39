@@ -14,6 +14,7 @@ export const Character = () => {
 
     useEffect(() => {
         const characterName = concatCharacterName(params.name) || "";
+        console.log(characterName);
         fetch(`https://www.breakingbadapi.com/api/characters?name=${characterName}`)
             .then(res => res.json())
             .then(character => setFavoriteCharacter(character[0]))
@@ -42,7 +43,7 @@ export const Character = () => {
                 <h3 className="character-header">{favoriteCharacter?.status || "Not found"}</h3>
                 <p className="character-info">{favoriteCharacter?.birth || "Not found"}</p>
                 <ul>
-                    {favoriteCharacter ? favoriteCharacter.occupation?.map(item => <li className="episode-links-list">{item}</li>)
+                    {favoriteCharacter ? favoriteCharacter?.occupation?.map(item => <li className="episode-links-list">{item}</li>)
                         :
                         <li>No characters found</li>}
                 </ul>
