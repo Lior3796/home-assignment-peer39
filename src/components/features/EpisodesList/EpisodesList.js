@@ -21,6 +21,7 @@ export const EpisodesList = ({ item }) => {
                                 component="h3"
                                 variant="div"
                             >
+
                                 <Link data-testid="link" to={`/episode/${item.episode_id}`}>{item.title}</Link>
 
 

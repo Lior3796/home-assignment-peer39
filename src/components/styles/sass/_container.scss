@@ -11,22 +11,11 @@
 	box-sizing: border-box;
 	overflow-x: hidden;
 }
-body {
-	width: 100%;
-}
 
 .container {
 	@media #{$sm},#{$md},#{$lg} {
 		position: relative;
 		width: 100%;
-	}
-	@media #{$sm} {
-		height: 200vh;
-	}
-	@media #{$md} {
-		height: 150vh;
-	}
-	@media #{$lg} {
 		height: 150vh;
 	}
 }

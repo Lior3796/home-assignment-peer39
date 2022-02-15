@@ -1,14 +1,16 @@
-// const { screen } = require("@testing-library/react");
-// const { render } = require("@testing-library/react");
-// import { Container } from "../Container";
+const { screen } = require("@testing-library/react");
+const { render } = require("@testing-library/react");
+import { Character } from "../Character";
 
-// it("Shoulad check if navbar exists", () => {
-//     render(<Container />);
-//     const ContainerElem = screen.getByRole("main");
-//     expect(ContainerElem).toBeInTheDocument();
-// })
-// it("Should not check if navbar exists", () => {
-//     render(<Container />);
-//     const ContainerElem = screen.queryByRole("form");
-//     expect(ContainerElem).not.toBeInTheDocument();
-// })
+describe("Character tests", () => {
+    it("Should check if navbar exists", () => {
+        render(<Character />);
+        const CharacterElem = screen.getByRole("main");
+        expect(CharacterElem).toBeInTheDocument();
+    })
+    it("Should not check if navbar exists", () => {
+        render(<Character />);
+        const CharacterElem = screen.queryByRole("form");
+        expect(CharacterElem).not.toBeInTheDocument();
+    })
+})

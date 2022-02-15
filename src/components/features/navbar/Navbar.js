@@ -12,8 +12,8 @@ export const Navbar = () => {
                     windowWidth > 460 ? (
                         <>
                             <Link className="navbar-link" to="/main"> Main </Link>
-                            <Link className="navbar-link" to="/episode"> Episode </Link>
-                            <Link className="navbar-link" to="/character"> character </Link>
+                            <Link className="navbar-link" to="/episode/1"> Episode </Link>
+                            <Link className="navbar-link" to="/character/Walter"> character </Link>
                         </>) : <></>
                 }
 

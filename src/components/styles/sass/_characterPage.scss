@@ -1,25 +1,39 @@
 .character-details-container {
-	@include details-container;
+	@media #{$sm},#{$md},#{$lg} {
+		@include details-container;
+	}
 }
 .character-image-container {
-	display: flex;
-	flex-flow: column;
-	justify-content: space-around;
-	width: 40%;
-	height: 60%;
-	padding-left: 50px;
+	@media #{$sm},#{$md},#{$lg} {
+		display: flex;
+		flex-flow: column;
+		justify-content: space-around;
+		width: 40%;
+		height: 50%;
+		padding-left: 50px;
+	}
 }
 .character-image {
-	flex: 1;
-	height: 100%;
-	object-fit: contain;
-	clip-path: fill-box;
+	@media #{$sm},#{$md},#{$lg} {
+		flex: 1;
+		height: 100%;
+		object-fit: contain;
+		clip-path: fill-box;
+	}
 }
 .character-links-list {
-	@include links-list;
+	@media #{$sm},#{$md},#{$lg} {
+		@include links-list;
+	}
 }
 
 .character-descripition {
-	@include descripition;
-	background-color: #1f6032;
+	@media #{$sm},#{$md},#{$lg} {
+		@include descripition;
+		background-color: #1f6032;
+		object-fit: fill;
+	}
+	@media #{$md},#{$lg} {
+		height: 50%;
+	}
 }

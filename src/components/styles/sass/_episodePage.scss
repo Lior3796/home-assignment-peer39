@@ -7,6 +7,20 @@
 }
 
 .episode-descripition {
-	@include descripition;
-	background-color: #1f6032;
+	@media #{$sm},#{$md},#{$lg} {
+		@include descripition;
+		background-color: #1f6032;
+	}
+	@media #{$sm} {
+		font-size: 1rem;
+		flex: 0.9;
+	}
+	@media #{$md} {
+		font-size: 1rem;
+		flex: 0.8;
+	}
+	@media #{$lg} {
+		font-size: 1rem;
+		flex: 0.5;
+	}
 }

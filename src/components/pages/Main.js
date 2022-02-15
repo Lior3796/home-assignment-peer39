@@ -18,7 +18,7 @@ export const Main = () => {
         fetch(`https://www.breakingbadapi.com/api/episodes?season=1`)
             .then(res => res.json())
             .then(episodes => spliceEpisodes(episodes))
-            .catch(e => console.log(e))
+            .catch(e => toast("Cant reload episodes"))
     }, [page])
 
     return (
