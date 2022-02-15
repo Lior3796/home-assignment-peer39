@@ -21,7 +21,7 @@ export const AppRouter = () => {
                 <>
                     <Navbar />
                     <Routes>
-                        <Route path="/" element={<Main />} />
+                        <Route path="/home-assignment-peer39" element={<Main />} />
                         <Route path="/main" element={<Main />} />
                         <Route path="/episode/:id" exact element={<Episode />} />
                         <Route path="/character/:name" exact element={<Character />} />
