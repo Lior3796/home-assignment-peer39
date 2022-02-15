@@ -1,0 +1,12 @@
+.episode-details-container {
+	@include details-container;
+}
+
+.episode-links-list {
+	@include links-list;
+}
+
+.episode-descripition {
+	@include descripition;
+	background-color: #1f6032;
+}

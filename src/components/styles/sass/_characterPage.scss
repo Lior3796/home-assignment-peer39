@@ -1,0 +1,25 @@
+.character-details-container {
+	@include details-container;
+}
+.character-image-container {
+	display: flex;
+	flex-flow: column;
+	justify-content: space-around;
+	width: 40%;
+	height: 60%;
+	padding-left: 50px;
+}
+.character-image {
+	flex: 1;
+	height: 100%;
+	object-fit: contain;
+	clip-path: fill-box;
+}
+.character-links-list {
+	@include links-list;
+}
+
+.character-descripition {
+	@include descripition;
+	background-color: #1f6032;
+}

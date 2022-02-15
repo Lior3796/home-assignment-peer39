@@ -1,0 +1,9 @@
+.navbar-container {
+	@media #{$sm},#{$md},#{$lg} {
+		@include stickyNav;
+		@include flex-center(row, space-around);
+		height: 10vh;
+		width: 100%;
+		z-index: 10;
+	}
+}
