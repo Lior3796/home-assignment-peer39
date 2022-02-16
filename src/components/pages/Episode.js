@@ -25,8 +25,8 @@ export const Episode = () => {
 
                     favoriteEpisode ?
                         <>
-                            <h1 className="episode-header">Episode title: {favoriteEpisode?.title}</h1>
-                            <h6 className="episode-info">air_date: {favoriteEpisode?.air_date}</h6>
+                            <h2 className="episode-header">Episode title: {favoriteEpisode?.title}</h2>
+                            <h4 className="episode-info">air_date: {favoriteEpisode?.air_date}</h4>
                             <ul>
                                 {characters?.map((item, key) => <Link key={key} title="characters" to={`/home-assignment-peer39/character/${item}`}><li>{item}</li></Link>)}
                             </ul>
