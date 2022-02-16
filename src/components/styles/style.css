@@ -145,6 +145,7 @@
   .pagination-container {
     position: absolute;
     width: 100%;
+    bottom: 5%;
   }
 }
 
@@ -157,13 +158,11 @@
 @media (min-width: 461px) and (max-width: 720px) {
   .pagination-container {
     left: calc((25% + 75%) / 2);
-    bottom: 1%;
   }
 }
 
 @media (min-width: 721px) {
   .pagination-container {
-    bottom: 0;
     left: 40%;
   }
 }

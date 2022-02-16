@@ -25,7 +25,7 @@ export const Character = () => {
                 // Checking window width for choose whice element to render
                 windowWidth > 460 && (
                     <div className="character-image-container">
-                        <img className="character-image" src={favoriteCharacter ? favoriteCharacter.img : "https://media.istockphoto.com/photos/iceberg-with-its-visible-and-underwater-or-submerged-parts-floating-picture-id1264160353?k=20&m=1264160353&s=612x612&w=0&h=aXfvgjOEvLekxZqIpbJByj80OLYx0esPjJ2jwyi-fUk="} alt="No Character found" />
+                        <img className="character-image" src={favoriteCharacter ? favoriteCharacter?.img : "https://media.istockphoto.com/photos/iceberg-with-its-visible-and-underwater-or-submerged-parts-floating-picture-id1264160353?k=20&m=1264160353&s=612x612&w=0&h=aXfvgjOEvLekxZqIpbJByj80OLYx0esPjJ2jwyi-fUk="} alt="No Character found" />
                     </div>
                 )
             }

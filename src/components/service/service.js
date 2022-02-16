@@ -24,10 +24,10 @@ export const getEpisodesById = (params, setCharacters, setFavoriteEpisode,) => {
 }
 
 export const getCharactersByName = (params, setFavoriteCharacter) => {
-    const characterName = concatCharacterName(params.name) || "";
+    const characterName = concatCharacterName(params?.name) || "";
     fetch(`https://www.breakingbadapi.com/api/characters?name=${characterName}`)
         .then(res => res.json())
-        .then(character => setFavoriteCharacter(character[0]))
+        .then(character => setFavoriteCharacter(character[0] || []))
         .catch(e => toast("Cant reload characters"));
 }
 
