@@ -59,17 +59,7 @@
 		@include headers(linear-gradient(45deg, black, grey));
 	}
 }
-@mixin dark {
-	background: $gradient-dark;
-	.header {
-		@include headers(linear-gradient(45deg, gold, white));
-	}
-	* > a,
-	button {
-		color: white;
-		cursor: pointer;
-	}
-}
+
 @mixin stickyNav {
 	position: absolute;
 	top: 0;
@@ -119,7 +109,6 @@
 @mixin descripition {
 	border-radius: 10px;
 	height: 70%;
-	flex: 0.8;
 	display: flex;
 	margin: auto;
 	flex-direction: column;

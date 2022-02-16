@@ -12,8 +12,6 @@ import { Episode } from '../../pages/Episode';
 import { Character } from '../../pages/Character';
 import { ErrorBoundary } from 'react-error-boundary';
 
-
-
 export const AppRouter = () => {
     return (
         <ErrorBoundary>

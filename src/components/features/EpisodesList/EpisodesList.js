@@ -6,9 +6,12 @@ import Avatar from '@mui/material/Avatar';
 import Typography from '@mui/material/Typography';
 import { Link } from 'react-router-dom';
 
-export const EpisodesList = ({ item }) => {
-    const windowWidth = window.innerWidth;
+// EpisodesList component - display episodes with MUI as library
 
+export const EpisodesList = ({ item }) => {
+    // EpisodesList component - display episodes with MUI as library
+
+    const windowWidth = window.innerWidth;
     return (
         <>
             <ListItem data-testid="ListItem">

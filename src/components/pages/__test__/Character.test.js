@@ -5,12 +5,12 @@ import { Character } from "../Character";
 describe("Character tests", () => {
     it("Should check if navbar exists", () => {
         render(<Character />);
-        const CharacterElem = screen.getByRole("main");
+        const CharacterElem = screen.getByTitle("character");
         expect(CharacterElem).toBeInTheDocument();
     })
-    it("Should not check if navbar exists", () => {
+    it("Should not check if Character exists", () => {
         render(<Character />);
-        const CharacterElem = screen.queryByRole("form");
+        const CharacterElem = screen.queryByRole("character1");
         expect(CharacterElem).not.toBeInTheDocument();
     })
 })

@@ -21,7 +21,7 @@
 }
 
 @media (min-width: 0px) and (max-width: 460px), (min-width: 461px) and (max-width: 720px), (min-width: 721px) {
-  .container, .light, .dark {
+  .container, .light {
     position: relative;
     width: 100%;
     height: 150vh;
@@ -50,32 +50,6 @@
   background-image: linear-gradient(45deg, black, grey);
   -webkit-animation: backgroundAnimation 5s 1s infinite alternate;
           animation: backgroundAnimation 5s 1s infinite alternate;
-}
-
-.dark {
-  background: linear-gradient(33deg, #121317, #323b42);
-}
-
-.dark .header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  text-align: center;
-  font-weight: 700;
-  background-size: 600%;
-  -webkit-background-clip: text;
-  color: transparent;
-  background-position: right;
-  background-image: linear-gradient(45deg, gold, white);
-  -webkit-animation: backgroundAnimation 5s 1s infinite alternate;
-          animation: backgroundAnimation 5s 1s infinite alternate;
-}
-
-.dark * > a,
-.dark button {
-  color: white;
-  cursor: pointer;
 }
 
 @media (min-width: 0px) and (max-width: 460px), (min-width: 461px) and (max-width: 720px), (min-width: 721px) {
@@ -220,9 +194,6 @@
   .episode-descripition {
     border-radius: 10px;
     height: 70%;
-    -webkit-box-flex: 0.8;
-        -ms-flex: 0.8;
-            flex: 0.8;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -242,7 +213,6 @@
 
 @media (min-width: 0px) and (max-width: 460px) {
   .episode-descripition {
-    font-size: 1rem;
     -webkit-box-flex: 0.9;
         -ms-flex: 0.9;
             flex: 0.9;
@@ -251,7 +221,6 @@
 
 @media (min-width: 461px) and (max-width: 720px) {
   .episode-descripition {
-    font-size: 1rem;
     -webkit-box-flex: 0.8;
         -ms-flex: 0.8;
             flex: 0.8;
@@ -260,10 +229,10 @@
 
 @media (min-width: 721px) {
   .episode-descripition {
-    font-size: 1rem;
-    -webkit-box-flex: 0.5;
-        -ms-flex: 0.5;
-            flex: 0.5;
+    -webkit-box-flex: 0.3;
+        -ms-flex: 0.3;
+            flex: 0.3;
+    min-width: 400px;
   }
 }
 
@@ -309,6 +278,7 @@
        object-fit: contain;
     -webkit-clip-path: fill-box;
             clip-path: fill-box;
+    mix-blend-mode: luminosity;
   }
 }
 
@@ -325,12 +295,9 @@
 }
 
 @media (min-width: 0px) and (max-width: 460px), (min-width: 461px) and (max-width: 720px), (min-width: 721px) {
-  .character-descripition {
+  .character-descripition-container {
     border-radius: 10px;
     height: 70%;
-    -webkit-box-flex: 0.8;
-        -ms-flex: 0.8;
-            flex: 0.8;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -347,12 +314,35 @@
     background-color: #1f6032;
     -o-object-fit: fill;
        object-fit: fill;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
 }
 
-@media (min-width: 461px) and (max-width: 720px), (min-width: 721px) {
-  .character-descripition {
-    height: 50%;
+@media (min-width: 0px) and (max-width: 460px) {
+  .character-descripition-container {
+    -webkit-box-flex: 0.9;
+        -ms-flex: 0.9;
+            flex: 0.9;
+  }
+}
+
+@media (min-width: 461px) and (max-width: 720px) {
+  .character-descripition-container {
+    -webkit-box-flex: 0.6;
+        -ms-flex: 0.6;
+            flex: 0.6;
+  }
+}
+
+@media (min-width: 721px) {
+  .character-descripition-container {
+    -webkit-box-flex: 0.45;
+        -ms-flex: 0.45;
+            flex: 0.45;
+    min-width: 400px;
+    min-height: 400px;
   }
 }
 

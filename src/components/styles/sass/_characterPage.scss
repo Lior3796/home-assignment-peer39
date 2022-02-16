@@ -19,6 +19,7 @@
 		height: 100%;
 		object-fit: contain;
 		clip-path: fill-box;
+		mix-blend-mode: luminosity;
 	}
 }
 .character-links-list {
@@ -27,13 +28,22 @@
 	}
 }
 
-.character-descripition {
+.character-descripition-container {
 	@media #{$sm},#{$md},#{$lg} {
 		@include descripition;
 		background-color: #1f6032;
 		object-fit: fill;
+		height: fit-content;
 	}
-	@media #{$md},#{$lg} {
-		height: 50%;
+	@media #{$sm} {
+		flex: 0.9;
+	}
+	@media #{$md} {
+		flex: 0.6;
+	}
+	@media #{$lg} {
+		flex: 0.45;
+		min-width: 400px;
+		min-height: 400px;
 	}
 }

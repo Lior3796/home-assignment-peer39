@@ -1,33 +1,31 @@
 import { useState, useEffect } from 'react';
 import '../styles/style.css';
 import 'react-toastify/dist/ReactToastify.css';
-import { ToastContainer, toast } from 'react-toastify';
-import { PaginationPage } from '../features/pagination/PaginationPage';
-import { EpisodeProvider } from '../../context/context';
+import { ToastContainer } from 'react-toastify'
 import { EpisodesList } from '../features/EpisodesList/EpisodesList';
+import { getEpisodesBySeasons } from '../service/service';
+import { PaginationPage } from '../features/pagination/PaginationPage';
+
+
+// Main component using services and utiils functions
+
 
 export const Main = () => {
     const [episodes, setEpisodes] = useState([]);
     const [page, setPage] = useState(1);
 
-    const spliceEpisodes = (episodes) => {
-        const newArr = episodes.splice((page - 2) * 7, 7);
-        setEpisodes(newArr);
-    }
-    useEffect(() => {
-        fetch(`https://www.breakingbadapi.com/api/episodes?season=1`)
-            .then(res => res.json())
-            .then(episodes => spliceEpisodes(episodes))
-            .catch(e => toast("Cant reload episodes"))
-    }, [page])
+    // Main component - getEpisodes before the page is display
+
+    useEffect(() => getEpisodesBySeasons(1, page, setEpisodes), [page])
 
     return (
-        <EpisodeProvider value={{ episodes, setEpisodes }}>
-            <div data-testid="container" className="users-list-container" >
+        <>
+            <main data-testid="container" className="users-list-container" >
                 {episodes.map(item => <EpisodesList item={item} />)}
-            </div>
-            <PaginationPage setPage={setPage} />
+            </main>
             <ToastContainer />
-        </EpisodeProvider>
+
+            <PaginationPage setPage={setPage} />
+        </>
     )
 }

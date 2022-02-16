@@ -4,6 +4,8 @@ import { PaginationItem } from '@mui/material';
 import Stack from '@mui/material/Stack';
 import '../../styles/style.css';
 
+// pagination component - filter 
+
 export const PaginationPage = ({ setPage }) => {
     const style = {
         background: "transparent",

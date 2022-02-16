@@ -1,37 +1,48 @@
 import { screen, fireEvent, render } from "@testing-library/react";
 import { BrowserRouter as Router } from "react-router-dom";
-import { UserList } from "../EpisodesList";
+import { EpisodesList } from "../EpisodesList";
 
-const MockUserList = () => {
+const MockEpisodesList = () => {
     const item = {
         episode_id: "1",
-        title: "Walter white"
+        title: "Pilot",
+        air_date: "01-20-2008"
     }
     return (
         <Router>
-            <UserList item={item} />
+            <EpisodesList item={item} />
         </Router>
     )
 }
-describe("UserList tests", () => {
-    it("Should check if UserList exists", () => {
-        render(<MockUserList />);
-        const MockUserListElem = screen.getByTestId("ListItem");
-        expect(MockUserListElem).toBeInTheDocument();
+describe("EpisodesList tests", () => {
+    it("Should check if EpisodesList exists", () => {
+        render(<MockEpisodesList />);
+        const MockEpisodesListElem = screen.getByTestId("ListItem");
+        expect(MockEpisodesListElem).toBeInTheDocument();
 
     })
-    it("Should not check if UserList exists", () => {
-        render(<MockUserList />);
-        const MockUserListElem = screen.queryByRole("form");
-        expect(MockUserListElem).not.toBeInTheDocument();
+
+    it("Should not check if EpisodesList exists", () => {
+        render(<MockEpisodesList />);
+        const MockEpisodesListElem = screen.queryByRole("form");
+        expect(MockEpisodesListElem).not.toBeInTheDocument();
     })
+
     it("Should open episodes page", () => {
-        render(<MockUserList />)
+        render(<MockEpisodesList />)
         const link = screen.getByTestId("link");
-        expect(link).toBeInTheDocument();
-        fireEvent.click(link, { target: { value: "Walter white" } });
-        const episode = screen.getByTestId("episode");
-        console.log(episode);
-        expect(episode).toBeInTheDocument();
+        fireEvent.click(link);
+        const episodeTitle = screen.getByText("Pilot");
+        expect(episodeTitle).toBeInTheDocument();
+
+    })
+
+    it("Should not open episodes page", () => {
+        render(<MockEpisodesList />)
+        const link = screen.getByTestId("link");
+        fireEvent.click(link);
+        const episodeTitle = screen.queryByText("Pilot1");
+        expect(episodeTitle).not.toBeInTheDocument();
+
     })
 })
