@@ -4,7 +4,7 @@ import '../../styles/style.css';
 import { Footer } from '../footer/Footer';
 
 import {
-    BrowserRouter as Router,
+    HashRouter as Router,
     Routes, Route
 } from "react-router-dom";
 import { Main } from '../../pages/Main';
@@ -15,7 +15,7 @@ import { ErrorBoundary } from 'react-error-boundary';
 export const AppRouter = () => {
     return (
         <ErrorBoundary>
-            <Router>
+            <HashRouter>
                 <>
                     <Navbar />
 
@@ -27,7 +27,7 @@ export const AppRouter = () => {
                     </Routes>
                     <Footer />
                 </>
-            </Router >
+            </HashRouter >
         </ErrorBoundary>
     )
 }
