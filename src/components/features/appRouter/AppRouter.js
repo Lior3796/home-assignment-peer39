@@ -4,8 +4,8 @@ import '../../styles/style.css';
 import { Footer } from '../footer/Footer';
 
 import {
-    HashRouter as Router,
-    Routes, Route
+    BrowserRouter as Router,
+    Routes, Route, HashRouter
 } from "react-router-dom";
 import { Main } from '../../pages/Main';
 import { Episode } from '../../pages/Episode';
@@ -15,19 +15,19 @@ import { ErrorBoundary } from 'react-error-boundary';
 export const AppRouter = () => {
     return (
         <ErrorBoundary>
-            <HashRouter>
-                <>
-                    <Navbar />
 
-                    <Routes>
-                        <Route path="/" exact element={<Main />} />
-                        <Route path="/home-assignment-peer39/main" exact element={<Main />} />
-                        <Route path="/home-assignment-peer39/episode/:id" exact element={<Episode />} />
-                        <Route path="/home-assignment-peer39/character/:name" exact element={<Character />} />
-                    </Routes>
-                    <Footer />
-                </>
-            </HashRouter >
+            <>
+                <Navbar />
+
+                <Routes>
+                    <Route path="/" exact element={<Main />} />
+                    <Route path="/home-assignment-peer39/main" exact element={<Main />} />
+                    <Route path="/home-assignment-peer39/episode/:id" exact element={<Episode />} />
+                    <Route path="/home-assignment-peer39/character/:name" exact element={<Character />} />
+                </Routes>
+                <Footer />
+            </>
+
         </ErrorBoundary>
     )
 }

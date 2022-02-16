@@ -4,10 +4,14 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { ErrorBoundary } from 'react-error-boundary';
-
+import {
+  HashRouter
+} from "react-router-dom";
 ReactDOM.render(
   <ErrorBoundary>
-    <App />
+    <HashRouter>
+      <App />
+    </HashRouter>
   </ErrorBoundary>,
   document.getElementById('root')
 );
