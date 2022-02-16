@@ -35,9 +35,9 @@ export const HamburgerMenu = () => {
                     'aria-labelledby': 'basic-button',
                 }}
             >
-                <Link to="/main"><MenuItem onClick={handleClose}>Main</MenuItem></Link>
-                <Link to="/episode/1"> <MenuItem onClick={handleClose}>Episode</MenuItem></Link>
-                <Link to="/character/Walter"> <MenuItem onClick={handleClose}>Character</MenuItem></Link>
+                <Link to="/home-assignment-peer39/main"><MenuItem onClick={handleClose}>Main</MenuItem></Link>
+                <Link to="/home-assignment-peer39/episode/1"> <MenuItem onClick={handleClose}>Episode</MenuItem></Link>
+                <Link to="/home-assignment-peer39/character/Walter"> <MenuItem onClick={handleClose}>Character</MenuItem></Link>
             </Menu>
         </div>
     );

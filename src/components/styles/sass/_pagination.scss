@@ -1,7 +1,6 @@
 .pagination-container {
 	@media #{$sm},#{$md},#{$lg} {
 		position: absolute;
-		bottom: 20vh;
 		width: 100%;
 	}
 	@media #{$sm} {
@@ -9,8 +8,10 @@
 	}
 	@media #{$md} {
 		left: calc((25% + 75%) / 2);
+		bottom: 1%;
 	}
 	@media #{$lg} {
+		bottom: 0;
 		left: 40%;
 	}
 }

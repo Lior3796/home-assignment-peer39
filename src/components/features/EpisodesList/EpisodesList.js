@@ -25,7 +25,7 @@ export const EpisodesList = ({ item }) => {
                                 variant="div"
                             >
 
-                                <Link data-testid="link" to={`/episode/${item.episode_id}`}>{item.title}</Link>
+                                <Link data-testid="link" to={`/home-assignment-peer39/episode/${item.episode_id}`}>{item.title}</Link>
 
 
                             </Typography>

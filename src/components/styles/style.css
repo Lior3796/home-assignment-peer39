@@ -144,7 +144,6 @@
 @media (min-width: 0px) and (max-width: 460px), (min-width: 461px) and (max-width: 720px), (min-width: 721px) {
   .pagination-container {
     position: absolute;
-    bottom: 20vh;
     width: 100%;
   }
 }
@@ -158,11 +157,13 @@
 @media (min-width: 461px) and (max-width: 720px) {
   .pagination-container {
     left: calc((25% + 75%) / 2);
+    bottom: 1%;
   }
 }
 
 @media (min-width: 721px) {
   .pagination-container {
+    bottom: 0;
     left: 40%;
   }
 }

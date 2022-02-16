@@ -30,7 +30,7 @@ export const Episode = () => {
                             <h6 className="episode-info">air_date:</h6>
                             <h6 className="episode-info">{favoriteEpisode?.air_date}</h6>
                             <ul>
-                                {characters?.map((item, key) => <Link key={key} title="characters" to={`/character/${item}`}><li>{item}</li></Link>)}
+                                {characters?.map((item, key) => <Link key={key} title="characters" to={`/home-assignment-peer39/character/${item}`}><li>{item}</li></Link>)}
                             </ul>
                         </>
                         // If the array is empty
