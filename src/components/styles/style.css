@@ -276,9 +276,10 @@
     height: 100%;
     -o-object-fit: contain;
        object-fit: contain;
-    -webkit-clip-path: fill-box;
-            clip-path: fill-box;
+    -webkit-clip-path: view-box;
+            clip-path: view-box;
     mix-blend-mode: luminosity;
+    border-radius: 15px;
   }
 }
 

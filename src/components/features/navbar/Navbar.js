@@ -11,9 +11,9 @@ export const Navbar = () => {
                 <h1>Lior App</h1>{
                     windowWidth > 460 ? (
                         <>
-                            <Link className="navbar-link" to="/main"> Main </Link>
-                            <Link className="navbar-link" to="/episode/1"> Episode </Link>
-                            <Link className="navbar-link" to="/character/Walter"> character </Link>
+                            <Link className="navbar-link" to="/home-assignment-peer39/main"> Main </Link>
+                            <Link className="navbar-link" to="/home-assignment-peer39/episode/1"> Episode </Link>
+                            <Link className="navbar-link" to="/home-assignment-peer39/character/Walter"> character </Link>
                         </>) : <HamburgerMenu />
                 }
 

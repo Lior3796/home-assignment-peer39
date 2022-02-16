@@ -20,9 +20,9 @@ export const AppRouter = () => {
                     <Navbar />
                     <Routes>
                         <Route path="/home-assignment-peer39" element={<Main />} />
-                        <Route path="/main" element={<Main />} />
-                        <Route path="/episode/:id" exact element={<Episode />} />
-                        <Route path="/character/:name" exact element={<Character />} />
+                        <Route path="/home-assignment-peer39/main" element={<Main />} />
+                        <Route path="/home-assignment-peer39/episode/:id" exact element={<Episode />} />
+                        <Route path="/home-assignment-peer39/character/:name" exact element={<Character />} />
                     </Routes>
                     <Footer />
                 </>

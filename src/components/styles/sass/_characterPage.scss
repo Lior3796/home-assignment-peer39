@@ -18,8 +18,9 @@
 		flex: 1;
 		height: 100%;
 		object-fit: contain;
-		clip-path: fill-box;
+		clip-path: view-box;
 		mix-blend-mode: luminosity;
+		border-radius: 15px;
 	}
 }
 .character-links-list {
