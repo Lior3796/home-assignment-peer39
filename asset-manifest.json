@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/home-assignment-peer39/static/css/main.b962eeb5.chunk.css",
-    "main.js": "/home-assignment-peer39/static/js/main.c4c29127.chunk.js",
-    "main.js.map": "/home-assignment-peer39/static/js/main.c4c29127.chunk.js.map",
-    "runtime-main.js": "/home-assignment-peer39/static/js/runtime-main.7cfa2670.js",
-    "runtime-main.js.map": "/home-assignment-peer39/static/js/runtime-main.7cfa2670.js.map",
-    "static/css/2.f4c56af9.chunk.css": "/home-assignment-peer39/static/css/2.f4c56af9.chunk.css",
-    "static/js/2.f7e0d476.chunk.js": "/home-assignment-peer39/static/js/2.f7e0d476.chunk.js",
-    "static/js/2.f7e0d476.chunk.js.map": "/home-assignment-peer39/static/js/2.f7e0d476.chunk.js.map",
-    "static/js/3.97ef8d2b.chunk.js": "/home-assignment-peer39/static/js/3.97ef8d2b.chunk.js",
-    "static/js/3.97ef8d2b.chunk.js.map": "/home-assignment-peer39/static/js/3.97ef8d2b.chunk.js.map",
-    "index.html": "/home-assignment-peer39/index.html",
-    "static/css/2.f4c56af9.chunk.css.map": "/home-assignment-peer39/static/css/2.f4c56af9.chunk.css.map",
-    "static/css/main.b962eeb5.chunk.css.map": "/home-assignment-peer39/static/css/main.b962eeb5.chunk.css.map",
-    "static/js/2.f7e0d476.chunk.js.LICENSE.txt": "/home-assignment-peer39/static/js/2.f7e0d476.chunk.js.LICENSE.txt"
+    "main.css": "/home-assignment-peer39/main/static/css/main.b962eeb5.chunk.css",
+    "main.js": "/home-assignment-peer39/main/static/js/main.c6254168.chunk.js",
+    "main.js.map": "/home-assignment-peer39/main/static/js/main.c6254168.chunk.js.map",
+    "runtime-main.js": "/home-assignment-peer39/main/static/js/runtime-main.0f6d2a42.js",
+    "runtime-main.js.map": "/home-assignment-peer39/main/static/js/runtime-main.0f6d2a42.js.map",
+    "static/css/2.f4c56af9.chunk.css": "/home-assignment-peer39/main/static/css/2.f4c56af9.chunk.css",
+    "static/js/2.f7e0d476.chunk.js": "/home-assignment-peer39/main/static/js/2.f7e0d476.chunk.js",
+    "static/js/2.f7e0d476.chunk.js.map": "/home-assignment-peer39/main/static/js/2.f7e0d476.chunk.js.map",
+    "static/js/3.97ef8d2b.chunk.js": "/home-assignment-peer39/main/static/js/3.97ef8d2b.chunk.js",
+    "static/js/3.97ef8d2b.chunk.js.map": "/home-assignment-peer39/main/static/js/3.97ef8d2b.chunk.js.map",
+    "index.html": "/home-assignment-peer39/main/index.html",
+    "static/css/2.f4c56af9.chunk.css.map": "/home-assignment-peer39/main/static/css/2.f4c56af9.chunk.css.map",
+    "static/css/main.b962eeb5.chunk.css.map": "/home-assignment-peer39/main/static/css/main.b962eeb5.chunk.css.map",
+    "static/js/2.f7e0d476.chunk.js.LICENSE.txt": "/home-assignment-peer39/main/static/js/2.f7e0d476.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.7cfa2670.js",
+    "static/js/runtime-main.0f6d2a42.js",
     "static/css/2.f4c56af9.chunk.css",
     "static/js/2.f7e0d476.chunk.js",
     "static/css/main.b962eeb5.chunk.css",
-    "static/js/main.c4c29127.chunk.js"
+    "static/js/main.c6254168.chunk.js"
   ]
 }
