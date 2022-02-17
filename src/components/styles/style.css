@@ -347,6 +347,17 @@
   }
 }
 
+@media (min-width: 0px) and (max-width: 460px) {
+  .character-avatar {
+    width: 150px !important;
+    height: 150px !important;
+  }
+  .character-avatar img {
+    -o-object-fit: fill;
+       object-fit: fill;
+  }
+}
+
 @media (min-width: 0px) and (max-width: 460px), (min-width: 461px) and (max-width: 720px), (min-width: 721px) {
   .Footer-container {
     position: absolute;

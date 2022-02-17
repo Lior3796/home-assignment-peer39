@@ -1,15 +1,26 @@
 const { screen } = require("@testing-library/react");
 const { render } = require("@testing-library/react");
 import { Container } from "../Container";
+import { ErrorBoundary } from 'react-error-boundary';
 
-it("Should check if navbar exists", () => {
-    render(<Container />);
-    const ContainerElem = screen.getByRole("main");
-    expect(ContainerElem).toBeInTheDocument();
-})
+const MockContainer = () => {
+    return (
+        <ErrorBoundary>
+            <Container />
+        </ErrorBoundary>
+    )
+}
+describe("Container tests", () => {
 
-it("Should not check if navbar exists", () => {
-    render(<Container />);
-    const ContainerElem = screen.queryByRole("form");
-    expect(ContainerElem).not.toBeInTheDocument();
+    it("Should check if Container elements exists", () => {
+        render(<MockContainer />);
+        const ContainerElem = screen.getByRole("main");
+        expect(ContainerElem).toBeInTheDocument();
+    })
+
+    it("Should check if Container elements not exists", () => {
+        render(<MockContainer />);
+        const ContainerElem = screen.queryByRole("form");
+        expect(ContainerElem).not.toBeInTheDocument();
+    })
 })

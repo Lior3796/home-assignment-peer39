@@ -7,12 +7,14 @@ import { ErrorBoundary } from 'react-error-boundary';
 import {
   HashRouter
 } from "react-router-dom";
+
+// @desc using Hash router for fix deployment issuse
+
 ReactDOM.render(
-  <ErrorBoundary>
-    <HashRouter>
-      <App />
-    </HashRouter>
-  </ErrorBoundary>,
+  <HashRouter>
+    <App />
+  </HashRouter>
+  ,
   document.getElementById('root')
 );
 

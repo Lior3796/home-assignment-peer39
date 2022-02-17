@@ -12,7 +12,7 @@ const MockEpisodes = () => {
 describe("Episodes tests", () => {
     it("Should check if Episode exists", () => {
         render(<MockEpisodes />);
-        const MockEpisodesElem = screen.getByText("Pilot");
+        const MockEpisodesElem = screen.getByText("Episode title: Pilot");
         const characters = screen.getAllByTitle("characters");
         expect(MockEpisodesElem).toBeInTheDocument();
         expect(characters.length).toEqual(2);

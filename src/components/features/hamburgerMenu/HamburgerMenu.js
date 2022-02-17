@@ -4,6 +4,8 @@ import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import { Link } from 'react-router-dom';
 
+// @desc HamburgerMenu for mobile devices
+
 export const HamburgerMenu = () => {
     const [anchorEl, setAnchorEl] = useState(null);
     const open = Boolean(anchorEl);
@@ -16,8 +18,9 @@ export const HamburgerMenu = () => {
     };
 
     return (
-        <div>
+        <div title="hamburgerMenu">
             <Button
+                title="menu"
                 id="basic-button"
                 aria-controls={open ? 'basic-menu' : undefined}
                 aria-haspopup="true"

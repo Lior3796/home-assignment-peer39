@@ -20,7 +20,7 @@ export const getEpisodesById = (params, setCharacters, setFavoriteEpisode,) => {
             setFavoriteEpisode(episodes[0] || {});
             setCharacters(episodes[0]?.characters);
         })
-        .catch(e => toast("Cant reload episodes"))
+        .catch(e => toast.dark("Cant reload episodes", { autoClose: 4000 }))
 }
 
 export const getCharactersByName = (params, setFavoriteCharacter) => {
@@ -28,6 +28,6 @@ export const getCharactersByName = (params, setFavoriteCharacter) => {
     fetch(`https://www.breakingbadapi.com/api/characters?name=${characterName}`)
         .then(res => res.json())
         .then(character => setFavoriteCharacter(character[0] || []))
-        .catch(e => toast("Cant reload characters"));
+        .catch(e => toast.dark("Cant reload episodes", { autoClose: 4000 }));
 }
 

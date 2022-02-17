@@ -5,14 +5,14 @@ import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer, toast } from 'react-toastify';
 import { getEpisodesById } from '../service/service';
 
-// Episode component using services and utiils functions
+// @desc Episode component using services and utiils functions
 
 export const Episode = () => {
     const [favoriteEpisode, setFavoriteEpisode] = useState({ title: "Pilot", air_date: "01-20-2008" });
     const [characters, setCharacters] = useState(["Walter White", "Jesse Pinkman"]);
     const params = useParams();
 
-    // Episode component - getEpisodes before the page is display
+    // @desc Episode component - getEpisodes before the page is display
 
     useEffect(() => getEpisodesById(params, setCharacters, setFavoriteEpisode), [characters]);
 
@@ -21,7 +21,7 @@ export const Episode = () => {
         <div data-testid="episode" className="episode-details-container">
             <div className="episode-descripition">
                 {
-                    // Checking window width for choose whice element to render
+                    // @desc Checking window width for choose whice element to render
 
                     favoriteEpisode ?
                         <>
@@ -31,7 +31,7 @@ export const Episode = () => {
                                 {characters?.map((item, key) => <Link key={key} title="characters" to={`/home-assignment-peer39/character/${item}`}><li>{item}</li></Link>)}
                             </ul>
                         </>
-                        // If the array is empty
+                        // @desc If the array is empty
 
                         : "No episode"
                 }

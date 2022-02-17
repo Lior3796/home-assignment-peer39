@@ -7,14 +7,14 @@ import { getEpisodesBySeasons } from '../service/service';
 import { PaginationPage } from '../features/pagination/PaginationPage';
 
 
-// Main component using services and utiils functions
+// @desc Main component using services and utiils functions page 1
 
 
 export const Main = () => {
     const [episodes, setEpisodes] = useState([]);
     const [page, setPage] = useState(1);
 
-    // Main component - getEpisodes before the page is display
+    // @desc Main component - getEpisodes before the page is display
 
     useEffect(() => getEpisodesBySeasons(1, page, setEpisodes), [page])
 

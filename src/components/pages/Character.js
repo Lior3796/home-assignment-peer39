@@ -7,14 +7,14 @@ import ListItemAvatar from '@mui/material/ListItemAvatar';
 import { ToastContainer } from 'react-toastify';
 import { getCharactersByName } from '../service/service';
 
-// Character component using services and utiils functions
+// @desc Character component using services and utiils functions
 
 export const Character = () => {
     const [favoriteCharacter, setFavoriteCharacter] = useState({});
     const params = useParams();
     const windowWidth = window.innerWidth;
 
-    // Character component - getCharacter before the page is display
+    // @desc Character component - getCharacter before the page is display
 
     useEffect(() => getCharactersByName(params, setFavoriteCharacter), [])
 
@@ -22,7 +22,7 @@ export const Character = () => {
 
         <div title="character" className="character-details-container">
             {
-                // Checking window width for choose whice element to render
+                // @desc Checking window width for choose whice element to render
                 windowWidth > 460 && (
                     <div className="character-image-container">
                         <img className="character-image" src={favoriteCharacter ? favoriteCharacter?.img : "https://media.istockphoto.com/photos/iceberg-with-its-visible-and-underwater-or-submerged-parts-floating-picture-id1264160353?k=20&m=1264160353&s=612x612&w=0&h=aXfvgjOEvLekxZqIpbJByj80OLYx0esPjJ2jwyi-fUk="} alt="No Character found" />
@@ -32,11 +32,11 @@ export const Character = () => {
 
             <div className="character-descripition-container">
                 {
-                    // Checking window width for choose whice element to render
+                    // @desc Checking window width for choose whice element to render
 
                     windowWidth < 460 && (
-                        <ListItemAvatar >
-                            <Avatar sx={{ width: "150px", height: "150px" }} src={favoriteCharacter.img} />
+                        <ListItemAvatar className="character-list-item-avatar" >
+                            <Avatar className="character-avatar" src={favoriteCharacter.img} />
                         </ListItemAvatar>
                     )}
                 <div className="character-descripition">
@@ -48,7 +48,7 @@ export const Character = () => {
 
                 <ul>
                     {
-                        // Checking if favoriteCharacter have occupation
+                        // @desc Checking if favoriteCharacter have occupation
 
                         favoriteCharacter ? favoriteCharacter?.occupation?.map(item => <li className="episode-links-list">{item}</li>)
                             :

@@ -3,6 +3,9 @@ import '../../styles/style.css';
 import { Link } from 'react-router-dom';
 import { ErrorBoundary } from 'react-error-boundary';
 import { HamburgerMenu } from '../hamburgerMenu/HamburgerMenu';
+
+// @desc navigation bar 
+
 export const Navbar = () => {
     const windowWidth = window.innerWidth;
     return (

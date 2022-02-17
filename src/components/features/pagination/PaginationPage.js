@@ -4,7 +4,7 @@ import { PaginationItem } from '@mui/material';
 import Stack from '@mui/material/Stack';
 import '../../styles/style.css';
 
-// pagination component - filter 
+// @desc pagination component - filter episodes by pages
 
 export const PaginationPage = ({ setPage }) => {
     const style = {
@@ -21,7 +21,7 @@ export const PaginationPage = ({ setPage }) => {
     return (
         <div title="pagination-container" className="pagination-container">
             <Stack spacing={2}>
-                <Pagination renderItem={(item) => changePage(item)} count={10} variant="text">
+                <Pagination renderItem={(item) => changePage(item)} count={15} variant="text">
                 </Pagination>
             </Stack>
         </div>
