@@ -2,18 +2,23 @@ Breaking Bad App
 
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Breaking_Bad_logo.svg/360px-Breaking_Bad_logo.svg.png)
 
-# Breaking Bad quotes API
+# Breaking Bad
 
-A simple API to retrieve some quotes of Breaking Bad, bitch!
+App showing all Breaking-bad episodes includes character, and seasons
 
-:globe_with_meridians: Website and demo: https://breakingbadquotes.xyz/
+## Website
 
-## Production host
-
-[https://breaking-bad-quotes.herokuapp.com](https://breaking-bad-quotes.herokuapp.com)
+https://lior3796.github.io/home-assignment-peer39/
 
 ## API
 
-## Credits
+https://www.breakingbadapi.com/documentation
 
-Inspired by [Ron Swanson Quotes](https://github.com/jamesseanwright/ron-swanson-quotes).
+## Tech Stack
+
+- React
+- Sass
+- Java-script
+- Jest
+- React-testing-library
+- MUI
