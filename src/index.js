@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import './index.css'
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { ErrorBoundary } from 'react-error-boundary';
@@ -11,9 +11,23 @@ import {
 // @desc using Hash router for fix deployment issuse
 
 ReactDOM.render(
-  <HashRouter>
-    <App />
-  </HashRouter>
+  <ErrorBoundary fallbackRender={(e) => (
+    <div role="alert">
+      <div>Can't load</div>
+    </div>
+  )}
+
+    fallback={() => {
+      return (
+        <div>
+          Something went wrong
+        </div>
+      )
+    }}>
+    <HashRouter>
+      <App />
+    </HashRouter>
+  </ErrorBoundary>
   ,
   document.getElementById('root')
 );

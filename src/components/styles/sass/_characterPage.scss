@@ -32,7 +32,6 @@
 .character-descripition-container {
 	@media #{$sm},#{$md},#{$lg} {
 		@include descripition;
-		background-color: #1f6032;
 		object-fit: fill;
 		height: fit-content;
 	}

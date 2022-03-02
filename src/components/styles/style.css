@@ -312,7 +312,6 @@
             align-items: center;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    background-color: #1f6032;
     -o-object-fit: fill;
        object-fit: fill;
     height: -webkit-fit-content;
